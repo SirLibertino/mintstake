@@ -42,7 +42,7 @@ function App() {
         </nav>
     </div>
       <Routes>
-          <Route exact path='/' exact element={<Dashboard />} />
+          <Route exact path='/' element={<Dashboard />} />
           <Route path='/whycommon' element={<WHYCommon/>} />
           <Route path='/whyuncommon' element={<WHYUncommon/>} />
           <Route path='/whytrip' element={<WHYTrip/>} />
