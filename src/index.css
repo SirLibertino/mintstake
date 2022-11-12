@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url(./fonts/GothamBook.ttf);
+  font-family: 'Pixel';
+  src: local('Pixel'), url(./fonts/PressStart2P-Regular.ttf);
+}
