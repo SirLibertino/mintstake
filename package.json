@@ -5,6 +5,7 @@
   "dependencies": {
     "@alch/alchemy-web3": "^1.4.7",
     "@coinbase/wallet-sdk": "^3.5.4",
+    "@nextui-org/react": "^1.0.0-beta.10",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

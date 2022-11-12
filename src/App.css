@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -130,8 +132,7 @@
   font-family: "Gotham";
   font-weight: 300;
   color: white;
-  display: flex;
-  justify-content: center;
+
   box-shadow: 0 0 1px 1px #17b2ff;
   -webkit-border-radius: 20px !important;
   -moz-border-radius: 20px !important;
@@ -146,7 +147,7 @@
   font-family: "Gotham";
   font-weight: 300;
   color: white;
-  display: flex;
+
   justify-content: center;
   box-shadow: 0 0 1px 1px #17b2ff;
   -webkit-border-radius: 20px !important;
@@ -183,8 +184,8 @@
   grid-template-columns: 400px 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  justify-items: stretch;
-  align-items: stretch
+  justify-items: center;
+  align-items: center
 }
 
 @keyframes glow2 {
