@@ -328,21 +328,31 @@ class WHYUncommon extends Component {
 
     return (
       <div className="App nftapp">
-        <h2 className="titlefont p-3" style={{ marginTop: "5px" }}>
+        <h2
+          className="titlefont p-4"
+          style={{ marginTop: "3px", color: "purple" }}
+        >
           WHYteRabbitHole Uncommon Collection
         </h2>
+        <h6 className="mb-3 gotham">
+          <em>
+            First MINT some NFTs from this Collection and simply STAKE them. The
+            RABBITS work DAY and NIGHT for you!
+          </em>
+        </h6>
         <div className="px-5 mb-4">
-          <input
-            id="connectbtn"
-            type="button"
-            className="connectbutton mt-2 bg-gradient border-danger"
+          <Button
+            className="center mb-4 gotham"
+            color="gradient"
+            shadow
             onClick={connectwallet}
-            value="Connect Your Wallet"
-          />
+          >
+            Connect Wallet
+          </Button>
         </div>
         <div className="container container-style">
           <div className="col">
-            <body className="nftminter2">
+            <body className="nftminter">
               <form>
                 <div className="row pt-3">
                   <div>
@@ -381,7 +391,7 @@ class WHYUncommon extends Component {
                   onClick={(nftamount) => this.handleNFT(nftamount, "value")}
                 >
                   <Button
-                    className="btn border-danger text-white"
+                    className="btn border-secondary text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -391,7 +401,7 @@ class WHYUncommon extends Component {
                     1
                   </Button>
                   <Button
-                    className="btn border-danger text-white"
+                    className="btn border-secondary text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -401,7 +411,7 @@ class WHYUncommon extends Component {
                     2
                   </Button>
                   <Button
-                    className="btn border-danger text-white"
+                    className="btn border-secondary text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -411,7 +421,7 @@ class WHYUncommon extends Component {
                     5
                   </Button>
                   <Button
-                    className="btn border-danger text-white"
+                    className="btn border-secondary text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -421,7 +431,7 @@ class WHYUncommon extends Component {
                     10
                   </Button>
                   <Button
-                    className="btn border-danger text-white"
+                    className="btn border-secondary text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -437,6 +447,12 @@ class WHYUncommon extends Component {
                 >
                   Buy with your preferred crypto!
                 </h6>
+                <h6
+                  className="pt-4"
+                  style={{ fontWeight: "400", fontSize: "15px", color: "gold" }}
+                >
+                  25 MATIC or 500 KARROTI
+                </h6>
                 <div className="row px-2 pb-2 row-style">
                   <div className="col">
                     <Button
@@ -444,6 +460,7 @@ class WHYUncommon extends Component {
                       bordered
                       auto
                       rounded
+                      color="gradient"
                       className="font-bold bg-gradient text-white"
                       onClick={mintnative}
                       style={{
@@ -463,7 +480,8 @@ class WHYUncommon extends Component {
                       bordered
                       auto
                       rounded
-                      className="button-style font-bold bg-gradient text-white border-danger"
+                      color="gradient"
+                      className="button-style font-bold bg-gradient text-white"
                       onClick={mint0}
                       style={{
                         border: "0.2px",
@@ -494,33 +512,28 @@ class WHYUncommon extends Component {
               </form>
             </body>
           </div>
-          <div className="container">
+          <div className="col">
             <div>
-              <body className="nftstaker2">
-                <div>
+              <body className="nftstaker border-0">
+                <form>
                   <div className="flex-col justify-center">
                     <h2>WHY NFT Staking Vault</h2>
-
                     <h6>First time staking?</h6>
-
-                    <button
-                      shadow
-                      bordered
+                    <Button
+                      className="center"
+                      color="secondary"
                       auto
-                      rounded
-                      className="button-style font-bold bg-gradient text-white border-danger"
-                      style={{
-                        border: "0.2px",
-                        borderRadius: "75px",
-                        boxShadow: "1px 1px 5px #000000",
-                        backgroundColor: "#161616",
-                      }}
+                      ghost
                       onClick={enable}
+                      style={{
+                        backgroundColor: "#161616",
+                        boxShadow: "1px 1px 5px #000000",
+                      }}
                     >
                       Authorize Your Wallet
-                    </button>
+                    </Button>
                   </div>
-                </div>
+                </form>
                 <div>
                   <div className="row p-3">
                     <div className="col">
@@ -531,25 +544,21 @@ class WHYUncommon extends Component {
                           boxShadow: "1px 1px 15px #ffffff",
                         }}
                       >
-                        <h5 style={{ color: "#FFFFFF", fontWeight: "300" }}>
+                        <h5 style={{ color: "#FFFFFF", fontWeight: "600" }}>
                           Your Vault Activity
                         </h5>
-                        <h6 style={{ color: "#FFFFFF" }}>
-                          Verify Staked Amount
-                        </h6>
                         <Button
-                          className="btn bg-gradient border-danger"
+                          className="center"
+                          color="gradient"
+                          size="xs"
+                          shadow
                           onClick={verify}
-                          style={{
-                            backgroundColor: "#ffffff10",
-                            boxShadow: "1px 1px 5px #000000",
-                          }}
                         >
                           Verify
                         </Button>
                         <table className="table mt-3 mb-5 px-3 table-dark">
                           <tr>
-                            <td style={{ fontSize: "19px" }}>
+                            <td style={{ fontSize: "17px" }}>
                               Your Staked NFTs:
                               <span
                                 style={{
@@ -564,7 +573,7 @@ class WHYUncommon extends Component {
                             </td>
                           </tr>
                           <tr>
-                            <td style={{ fontSize: "19px" }}>
+                            <td style={{ fontSize: "17px" }}>
                               Total Staked NFTs:
                               <span
                                 style={{
@@ -579,11 +588,15 @@ class WHYUncommon extends Component {
                             </td>
                           </tr>
                           <tr>
-                            <td style={{ fontSize: "19px" }}>
+                            <td style={{ fontSize: "15px" }}>
                               Unstake All Staked NFTs
                               <Button
+                                className="center mt-1 mb-3"
+                                color="secondary"
+                                auto
+                                ghost
+                                size="xs"
                                 onClick={unstakeall}
-                                className="btn mb-3 bg-gradient border-danger"
                                 style={{
                                   backgroundColor: "#ffffff10",
                                   boxShadow: "1px 1px 5px #000000",
@@ -599,47 +612,53 @@ class WHYUncommon extends Component {
                     <img className="col-lg-4" src="token.png" alt="art" />
                     <div className="col">
                       <form
-                        className="stakingrewards"
+                        className="stakingrewards p-1"
                         style={{
                           borderRadius: "25px",
                           boxShadow: "1px 1px 15px #ffffff",
                         }}
                       >
-                        <h5 style={{ color: "#FFFFFF", fontWeight: "300" }}>
+                        <h5 style={{ color: "#FFFFFF", fontWeight: "600" }}>
                           {" "}
                           Staking Rewards
                         </h5>
                         <Button
-                          className="btn bg-gradient border-danger"
+                          className="center"
+                          color="gradient"
+                          size="xs"
+                          shadow
                           onClick={rewardinfo}
-                          style={{
-                            backgroundColor: "#ffffff10",
-                            boxShadow: "1px 1px 5px #000000",
-                          }}
                         >
-                          Earned KAROOTI Tokens
+                          Refresh
                         </Button>
                         <div
                           id="earned"
                           style={{
                             color: "#39FF14",
-                            marginTop: "5px",
+                            marginTop: "15px",
+                            marginBottom: "10px",
                             fontSize: "25px",
                             fontWeight: "500",
                             textShadow: "1px 1px 2px #000000",
                           }}
                         >
-                          <p style={{ fontSize: "20px" }}>Earned Tokens</p>
+                          <p style={{ fontSize: "20px", marginTop: "20px" }}>
+                            Earned Tokens
+                          </p>
                         </div>
-                        <div className="col-12 mt-2">
+                        <div className="col mt-3 mb-3">
                           <div style={{ color: "white" }}>Claim Rewards</div>
                           <Button
-                            className="btn bg-gradient mb-2 border-danger"
                             onClick={claimit}
+                            auto
+                            ghost
+                            color="secondary"
+                            size="xs"
                             style={{
                               backgroundColor: "#ffffff10",
                               boxShadow: "1px 1px 5px #000000",
                             }}
+                            className="center"
                           >
                             Claim
                           </Button>
@@ -654,23 +673,26 @@ class WHYUncommon extends Component {
         </div>
         <div className="row nftportal mt-3">
           <div className="col mt-4 ml-3">
-            <img src="blocksec.png" width={"60%"} alt="polygon"></img>
+            <img src="blocksec.png" width={"50%"} alt="blocksecurity"></img>
           </div>
           <div className="col">
-            <h2 className="titlefont mt-3 mb-4">Your NFT Portal</h2>
+            <h2 className="titlefont mt-4 mb-1" style={{ color: "purple" }}>
+              Your NFT Portal
+            </h2>
             <Button
-              className="btn bg-gradient mb-2 border-danger"
+              className="center gotham mt-2 mb-2"
+              color="gradient"
+              shadow
               onClick={refreshPage}
-              style={{
-                backgroundColor: "#000000",
-                boxShadow: "1px 1px 5px #000000",
-              }}
             >
               Refresh NFT Portal
             </Button>
+            <h6 className="gotham mt-3">
+              <em>Your owned and staked NFTs are displayed here.</em>
+            </h6>
           </div>
           <div className="col mt-3 mr-5">
-            <img src="web3.png" width={"60%"} alt="ethereum"></img>
+            <img src="web3.png" width={"50%"} alt="web3security"></img>
           </div>
           <NFT2 />
         </div>

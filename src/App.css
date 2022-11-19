@@ -55,12 +55,48 @@
     100%{background-position:0% 50%}
 }
 
+.center {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.navapp {
+  background: -webkit-linear-gradient(
+    to right,
+    #0b0920,
+    #081f31,
+    #161616
+  );
+  background: linear-gradient(
+    to right,
+    #0b0920,
+    #081f31,
+    #161616
+  );
+}
+
 .nftapp {
-  background: #161616;
+  background: -webkit-linear-gradient(
+    to right,
+    #0b0920,
+    #081f31,
+    #161616
+  );
+  background: linear-gradient(
+    to right,
+    #0b0920,
+    #081f31,
+    #161616
+  );
 }
 
 .nftapp2 {
   background: radial-gradient(circle, rgba(94,23,117,0.9136029411764706) 50%, rgba(110,62,14,1) 90%);
+  background: radial-gradient(circle at 50% 50%, #000000, #508aa3, #3165a0, #7e07ad, #d43809);
 }
 
 @-webkit-keyframes AnimationName {
@@ -89,6 +125,11 @@
   font-weight: 200;
 }
 
+.gotham {
+  font-family: "Gotham";
+  color: white;
+}
+
 .navbarfont {
   font-family: "Gotham";
   font-weight: 300;
@@ -100,7 +141,7 @@
 }
 
 .nftminter {
-    background: radial-gradient(circle at 50% 50%, #5e99ac, #508aa3, #67358f, #9d10a1, #b4c00c);
+    background: radial-gradient(circle, rgba(94, 23, 117, 0.9136029411764706) 50%, rgba(110, 62, 14, 1) 90%);
     font-family: "Gotham";
     font-weight: 300;
     color: white;
@@ -114,7 +155,7 @@
 }
 
 .nftminter2 {
-  background: radial-gradient(circle at 50% 50%, #000000, #508aa3, #3165a0, #7e07ad, #d43809);
+  background: radial-gradient(circle, rgba(94,23,117,0.9136029411764706) 50%, rgba(110,62,14,1) 90%);
   font-family: "Gotham";
   font-weight: 300;
   color: white;
@@ -128,7 +169,7 @@
 }
 
 .nftstaker {
-  background: radial-gradient(circle at 50% 50%, #5e99ac, #508aa3, #67358f, #9d10a1, #b4c00c);
+  background: radial-gradient(circle, rgba(94,23,117,0.9136029411764706) 50%, rgba(110,62,14,1) 90%);
   font-family: "Gotham";
   font-weight: 300;
   color: white;
@@ -142,8 +183,8 @@
   border: 20px !important;
 }
 
-.nftstaker2 {
-  background: radial-gradient(circle at 50% 50%, #000000, #508aa3, #3165a0, #7e07ad, #d43809);
+.nftstaker2 {  
+  background: radial-gradient(circle, rgba(94,23,117,0.9136029411764706) 50%, rgba(110,62,14,1) 90%);
   font-family: "Gotham";
   font-weight: 300;
   color: white;
@@ -252,14 +293,25 @@ font-family: "Gotham";
 font-weight: 300;
 background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
 }
-.n2dtitlestyle {
+.titlestyle {
   color: #ffffff;
   font-family: "Gotham";
   font-weight: 300;
 }
 
 .nftportal {
-  background: #161616;
+  background: -webkit-linear-gradient(
+    to right,
+    #0b0920,
+    #081f31,
+    #161616
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0b0920,
+    #081f31,
+    #161616
+  );
 }
 
 .stakedcard {

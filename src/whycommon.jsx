@@ -330,17 +330,27 @@ class WHYCommon extends Component {
 
     return (
       <div className="App nftapp">
-        <h2 className="titlefont p-3" style={{ marginTop: "5px" }}>
+        <h2
+          className="titlefont p-4"
+          style={{ marginTop: "3px", color: "green" }}
+        >
           WHYteRabbitHole Common Collection
         </h2>
+        <h6 className="mb-3 gotham">
+          <em>
+            First MINT some NFTs from this Collection and simply STAKE them. The
+            RABBITS work DAY and NIGHT for you!
+          </em>
+        </h6>
         <div className="px-5 mb-4">
-          <input
-            id="connectbtn"
-            type="button"
-            className="connectbutton mt-2 bg-gradient border-warning"
+          <Button
+            className="center mb-4 gotham"
+            color="gradient"
+            shadow
             onClick={connectwallet}
-            value="Connect Your Wallet"
-          />
+          >
+            Connect Wallet
+          </Button>
         </div>
         <div className="container container-style">
           <div className="col">
@@ -383,7 +393,7 @@ class WHYCommon extends Component {
                   onClick={(nftamount) => this.handleNFT(nftamount, "value")}
                 >
                   <Button
-                    className="btn border-warning text-white"
+                    className="btn border-success text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -393,7 +403,7 @@ class WHYCommon extends Component {
                     1
                   </Button>
                   <Button
-                    className="btn border-warning text-white"
+                    className="btn border-success text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -403,7 +413,7 @@ class WHYCommon extends Component {
                     2
                   </Button>
                   <Button
-                    className="btn border-warning text-white"
+                    className="btn border-success text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -413,7 +423,7 @@ class WHYCommon extends Component {
                     5
                   </Button>
                   <Button
-                    className="btn border-warning text-white"
+                    className="btn border-success text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -423,7 +433,7 @@ class WHYCommon extends Component {
                     10
                   </Button>
                   <Button
-                    className="btn border-warning text-white"
+                    className="btn border-success text-white"
                     style={{
                       boxShadow: "1px 1px 5px #000000",
                       backgroundColor: "#161616",
@@ -439,6 +449,12 @@ class WHYCommon extends Component {
                 >
                   Buy with your preferred crypto!
                 </h6>
+                <h6
+                  className="pt-4"
+                  style={{ fontWeight: "400", fontSize: "15px", color: "gold" }}
+                >
+                  15 MATIC or 275 KARROTI
+                </h6>
                 <div className="row px-2 pb-2 row-style">
                   <div className="col">
                     <Button
@@ -446,6 +462,7 @@ class WHYCommon extends Component {
                       bordered
                       auto
                       rounded
+                      color="gradient"
                       className="font-bold bg-gradient text-white"
                       onClick={mintnative}
                       style={{
@@ -465,7 +482,8 @@ class WHYCommon extends Component {
                       bordered
                       auto
                       rounded
-                      className="font-bold bg-gradient text-white border-warning"
+                      color="gradient"
+                      className="button-style font-bold bg-gradient text-white"
                       onClick={mint0}
                       style={{
                         border: "0.2px",
@@ -497,174 +515,186 @@ class WHYCommon extends Component {
             </body>
           </div>
           <div className="col">
-            <body className="nftstaker border-0">
-              <form>
-                <h2
-                  style={{
-                    borderRadius: "14px",
-                    fontWeight: "300",
-                    fontSize: "25px",
-                  }}
-                >
-                  WHY NFT Staking Vault{" "}
-                </h2>
-                <h6 style={{ fontWeight: "300" }}>First time staking?</h6>
-                <Button
-                  className="btn bg-gradient border-warning"
-                  onClick={enable}
-                  style={{
-                    backgroundColor: "#161616",
-                    boxShadow: "1px 1px 5px #000000",
-                  }}
-                >
-                  Authorize Your Wallet
-                </Button>
-                <div className="row px-3">
-                  <div className="col">
-                    <form
-                      class="stakingrewards"
+            <div>
+              <body className="nftstaker border-0">
+                <form>
+                  <div className="flex-col justify-center">
+                    <h2>WHY NFT Staking Vault</h2>
+                    <h6>First time staking?</h6>
+                    <Button
+                      className="center"
+                      color="success"
+                      auto
+                      ghost
+                      onClick={enable}
                       style={{
-                        borderRadius: "25px",
-                        boxShadow: "1px 1px 15px #ffffff",
+                        backgroundColor: "#161616",
+                        boxShadow: "1px 1px 5px #000000",
                       }}
                     >
-                      <h5 style={{ color: "#FFFFFF", fontWeight: "300" }}>
-                        Your Vault Activity
-                      </h5>
-                      <h6 style={{ color: "#FFFFFF" }}>Verify Staked Amount</h6>
-                      <Button
-                        className="btn bg-gradient border-warning"
-                        onClick={verify}
-                        style={{
-                          backgroundColor: "#ffffff10",
-                          boxShadow: "1px 1px 5px #000000",
-                        }}
-                      >
-                        Verify
-                      </Button>
-                      <table className="table mt-3 mb-5 px-3 table-dark">
-                        <tr>
-                          <td style={{ fontSize: "19px" }}>
-                            Your Staked NFTs:
-                            <span
-                              style={{
-                                backgroundColor: "#ffffff00",
-                                fontSize: "21px",
-                                color: "#39FF14",
-                                fontWeight: "500",
-                                textShadow: "1px 1px 2px #000000",
-                              }}
-                              id="yournfts"
-                            ></span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ fontSize: "19px" }}>
-                            Total Staked NFTs:
-                            <span
-                              style={{
-                                backgroundColor: "#ffffff00",
-                                fontSize: "21px",
-                                color: "#39FF14",
-                                fontWeight: "500",
-                                textShadow: "1px 1px 2px #000000",
-                              }}
-                              id="stakedbalance"
-                            ></span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ fontSize: "19px" }}>
-                            Unstake All Staked NFTs
-                            <Button
-                              className="mb-3 bg-gradient border-warning"
-                              onClick={unstakeall}
-                              style={{
-                                backgroundColor: "#ffffff10",
-                                boxShadow: "1px 1px 5px #000000",
-                              }}
-                            >
-                              Unstake All
-                            </Button>
-                          </td>
-                        </tr>
-                      </table>
-                    </form>
+                      Authorize Your Wallet
+                    </Button>
                   </div>
-                  <img className="col-lg-4" src="token.png" alt="art" />
-                  <div className="col">
-                    <form
-                      className="stakingrewards"
-                      style={{
-                        borderRadius: "25px",
-                        boxShadow: "1px 1px 15px #ffffff",
-                      }}
-                    >
-                      <h5 style={{ color: "#FFFFFF", fontWeight: "300" }}>
-                        {" "}
-                        Staking Rewards
-                      </h5>
-                      <Button
-                        className="btn bg-gradient border-warning"
-                        onClick={rewardinfo}
+                </form>
+                <div>
+                  <div className="row p-3">
+                    <div className="col">
+                      <form
+                        class="stakingrewards"
                         style={{
-                          backgroundColor: "#ffffff10",
-                          boxShadow: "1px 1px 5px #000000",
+                          borderRadius: "25px",
+                          boxShadow: "1px 1px 15px #ffffff",
                         }}
                       >
-                        Earned KAROOTI Tokens
-                      </Button>
-                      <div
-                        id="earned"
-                        style={{
-                          color: "#39FF14",
-                          marginTop: "5px",
-                          fontSize: "25px",
-                          fontWeight: "500",
-                          textShadow: "1px 1px 2px #000000",
-                        }}
-                      >
-                        <p style={{ fontSize: "20px" }}>Earned Tokens</p>
-                      </div>
-                      <div className="col-12 mt-2">
-                        <div style={{ color: "white" }}>Claim Rewards</div>
+                        <h5 style={{ color: "#FFFFFF", fontWeight: "600" }}>
+                          Your Vault Activity
+                        </h5>
                         <Button
-                          onClick={claimit}
-                          style={{
-                            backgroundColor: "#ffffff10",
-                            boxShadow: "1px 1px 5px #000000",
-                          }}
-                          className="mb-2 bg-gradient border-warning"
+                          className="center"
+                          size="xs"
+                          color="gradient"
+                          shadow
+                          onClick={verify}
                         >
-                          Claim
+                          Verify
                         </Button>
-                      </div>
-                    </form>
+                        <table className="table mt-3 mb-5 px-3 table-dark">
+                          <tr>
+                            <td style={{ fontSize: "17px" }}>
+                              Your Staked NFTs:
+                              <span
+                                style={{
+                                  backgroundColor: "#ffffff00",
+                                  fontSize: "21px",
+                                  color: "#39FF14",
+                                  fontWeight: "500",
+                                  textShadow: "1px 1px 2px #000000",
+                                }}
+                                id="yournfts"
+                              ></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style={{ fontSize: "17px" }}>
+                              Total Staked NFTs:
+                              <span
+                                style={{
+                                  backgroundColor: "#ffffff00",
+                                  fontSize: "21px",
+                                  color: "#39FF14",
+                                  fontWeight: "500",
+                                  textShadow: "1px 1px 2px #000000",
+                                }}
+                                id="stakedbalance"
+                              ></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style={{ fontSize: "15px" }}>
+                              Unstake All Staked NFTs
+                              <Button
+                                className="center mt-1 mb-3"
+                                color="success"
+                                auto
+                                ghost
+                                size="xs"
+                                onClick={unstakeall}
+                                style={{
+                                  backgroundColor: "#ffffff10",
+                                  boxShadow: "1px 1px 5px #000000",
+                                }}
+                              >
+                                Unstake All
+                              </Button>
+                            </td>
+                          </tr>
+                        </table>
+                      </form>
+                    </div>
+                    <img className="col-lg-4" src="token.png" alt="art" />
+                    <div className="col">
+                      <form
+                        className="p-1 stakingrewards"
+                        style={{
+                          borderRadius: "25px",
+                          boxShadow: "1px 1px 15px #ffffff",
+                        }}
+                      >
+                        <h5 style={{ color: "#FFFFFF", fontWeight: "600" }}>
+                          {" "}
+                          Staking Rewards
+                        </h5>
+                        <Button
+                          className="center"
+                          size="xs"
+                          color="gradient"
+                          shadow
+                          onClick={rewardinfo}
+                        >
+                          Refresh
+                        </Button>
+                        <div
+                          id="earned"
+                          style={{
+                            color: "#39FF14",
+                            marginTop: "15px",
+                            marginBottom: "10px",
+                            fontSize: "25px",
+                            fontWeight: "500",
+                            textShadow: "1px 1px 2px #000000",
+                          }}
+                        >
+                          <p style={{ fontSize: "20px", marginTop: "20px" }}>
+                            Earned Tokens
+                          </p>
+                        </div>
+                        <div className="col mt-3 mb-3">
+                          <div style={{ color: "white" }}>Claim Rewards</div>
+                          <Button
+                            onClick={claimit}
+                            auto
+                            ghost
+                            color="success"
+                            size="xs"
+                            style={{
+                              backgroundColor: "#ffffff10",
+                              boxShadow: "1px 1px 5px #000000",
+                            }}
+                            className="center"
+                          >
+                            Claim
+                          </Button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-              </form>
-            </body>
+              </body>
+            </div>
           </div>
         </div>
         <div className="row nftportal mt-3">
           <div className="col mt-4 ml-3">
-            <img src="blocksec.png" width={"60%"} alt="polygon"></img>
+            <img src="blocksec.png" width={"50%"} alt="blocksecurity"></img>
           </div>
           <div className="col">
-            <h2 className="titlefont mt-3 mb-4">Your NFT Portal</h2>
+            <h2 className="titlefont mt-4 mb-1" style={{ color: "green" }}>
+              Your NFT Portal
+            </h2>
             <Button
-              className="mb-2 bg-gradient border-warning"
+              className="center gotham mt-2 mb-2"
+              color="gradient"
+              shadow
               onClick={refreshPage}
-              style={{
-                backgroundColor: "#000000",
-                boxShadow: "1px 1px 5px #000000",
-              }}
             >
               Refresh NFT Portal
             </Button>
+            <h6 className="gotham mt-3">
+              <em>Your owned and staked NFTs are displayed here.</em>
+            </h6>
           </div>
           <div className="col mt-3 mr-5">
-            <img src="web3.png" width={"60%"} alt="ethereum"></img>
+            <img src="web3.png" width={"50%"} alt="web3security"></img>
           </div>
           <NFT />
         </div>

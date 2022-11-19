@@ -12,14 +12,13 @@ function App() {
   return (
       <Router>
         <div>
-          <nav class="navbar navbarfont navbarglow navbar-expand-md navbar-dark bg-dark">
+          <nav class="navbar navapp gotham navbarglow navbar-expand-md navbar-dark">
             <div class="container-fluid">
               <a
                 class="navbar-brand px-3"
-                style={{ fontWeight: "800", fontSize: "25px" }}
                 href="/"
               >
-                <img src="why-logo.png" width="17%" alt="whylogo" />
+                <img src="why-logo.png" width="11%" alt="whylogo" />
               </a>
               <button
                 class="navbar-toggler"
