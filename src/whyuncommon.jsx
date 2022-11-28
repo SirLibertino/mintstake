@@ -352,7 +352,7 @@ class WHYUncommon extends Component {
         </div>
         <div className="container container-style">
           <div className="col">
-            <body className="nftminter">
+            <body className="nftminter2">
               <form>
                 <div className="row pt-3">
                   <div>
@@ -514,7 +514,7 @@ class WHYUncommon extends Component {
           </div>
           <div className="col">
             <div>
-              <body className="nftstaker border-0">
+              <body className="nftstaker2 border-0">
                 <form>
                   <div className="flex-col justify-center">
                     <h2>WHY NFT Staking Vault</h2>

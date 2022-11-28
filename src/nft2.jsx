@@ -104,7 +104,7 @@ export default function NFT2() {
                   vaultcontract.methods.stake([nft.tokenId]).send({ from: account });
                 }
                 return (
-                  <div className="card nft-card mt-3 mb-3" key={i} >
+                  <div className="card nft-card2 mt-3 mb-3" key={i} >
                     <div className="image-over">
                       <img className="card-img-top" src={nftpng2 + nft.tokenId + '.png'} alt="" />
                     </div>

@@ -141,7 +141,7 @@
 }
 
 .nftminter {
-    background: radial-gradient(circle, rgba(94, 23, 117, 0.9136029411764706) 50%, rgba(110, 62, 14, 1) 90%);
+    background: radial-gradient(rgb(27, 167, 14) 40%, rgb(7, 143, 41) 60%);
     font-family: "Gotham";
     font-weight: 300;
     color: white;
@@ -155,7 +155,7 @@
 }
 
 .nftminter2 {
-  background: radial-gradient(circle, rgba(94,23,117,0.9136029411764706) 50%, rgba(110,62,14,1) 90%);
+  background: radial-gradient(rgb(100, 3, 100) 40%, rgba(94,23,117,0.9136029411764706) 60%);
   font-family: "Gotham";
   font-weight: 300;
   color: white;
@@ -169,7 +169,7 @@
 }
 
 .nftstaker {
-  background: radial-gradient(circle, rgba(94,23,117,0.9136029411764706) 50%, rgba(110,62,14,1) 90%);
+  background: radial-gradient(rgb(27, 167, 14) 40%, rgb(7, 143, 41) 60%);
   font-family: "Gotham";
   font-weight: 300;
   color: white;
@@ -184,7 +184,7 @@
 }
 
 .nftstaker2 {  
-  background: radial-gradient(circle, rgba(94,23,117,0.9136029411764706) 50%, rgba(110,62,14,1) 90%);
+  background: radial-gradient(rgb(100, 3, 100) 40%, rgba(94,23,117,0.9136029411764706) 60%);
   font-family: "Gotham";
   font-weight: 300;
   color: white;
@@ -265,7 +265,14 @@
 }
 
 .nft-card {
-  background-image: linear-gradient(125.83deg, rgb(30, 42, 34) 0%, rgb(17, 3, 141) 80.09%);
+  background-image: radial-gradient(rgb(18, 102, 10) 40%, rgb(3, 70, 20) 60%);
+  font-family: "Gotham";
+  color: white;
+  box-shadow: 1px 1px 15px #000000;
+}
+
+.nft-card2 {
+  background-image: radial-gradient(rgb(100, 3, 100) 40%, rgba(94,23,117,0.9136029411764706) 60%);
   font-family: "Gotham";
   color: white;
   box-shadow: 1px 1px 15px #000000;
