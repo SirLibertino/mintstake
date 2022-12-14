@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import WHYCommon from "./whycommon";
 import Dashboard from "./dashboard";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import WHYUncommon from "./whyuncommon";
 import WHYTrip from "./whytrip";
 import WHYLegendary from "./whylegendary";
@@ -35,21 +35,19 @@ function App() {
                 <ul
                   class="navbar-nav me-auto mb-2 mb-md-0"
                   style={{ fontSize: "20px" }}
-                >
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">
+                ><Link to="/">
+                    <a class="nav-link active" aria-current="page">
                       Home
                     </a>
-                  </li>
-                  <li class="nav-item">
+                  </Link>
+                  <Link to="/whycommon">
                     <a
                       class="nav-link active px-4"
                       aria-current="page"
-                      href="/whycommon"
                     >
                       WHY Common
                     </a>
-                  </li>
+                    </Link>
                   <li class="nav-item">
                     <a
                       class="nav-link active px-4"
