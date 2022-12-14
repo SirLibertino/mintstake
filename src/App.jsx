@@ -33,7 +33,7 @@ function App() {
               </button>
               <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul
-                  class="navbar-nav me-auto mb-2 mb-md-0"
+                  class="navbar-nav me-auto gotham mb-2 mb-md-0"
                   style={{ fontSize: "20px" }}
                 ><Link to="/">
                     <a class="nav-link active" aria-current="page">
@@ -48,33 +48,30 @@ function App() {
                       WHY Common
                     </a>
                     </Link>
-                  <li class="nav-item">
+                    <Link to="/whyuncommon">
                     <a
                       class="nav-link active px-4"
                       aria-current="page"
-                      href="/whyuncommon"
                     >
                       WHY Uncommon
                     </a>
-                  </li>
-                  <li class="nav-item">
+                    </Link>
+                    <Link to="/whytrip">
                     <a
                       class="nav-link active px-4"
                       aria-current="page"
-                      href="/whytrip"
                     >
                       WHY Trip
                     </a>
-                  </li>
-                  <li class="nav-item">
+                    </Link>
+                    <Link to="/whylegendary">
                     <a
                       class="nav-link active px-4"
                       aria-current="page"
-                      href="/whylegendary"
                     >
                       WHY Legendary
                     </a>
-                  </li>
+                    </Link>
                 </ul>
               </div>
             </div>
