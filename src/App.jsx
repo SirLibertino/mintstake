@@ -10,16 +10,17 @@ import WHYLegendary from "./whylegendary";
 
 function App() {
   return (
-      <Router>
+      <Router basename="/">
         <div>
           <nav class="navbar navapp gotham navbarglow navbar-expand-md navbar-dark">
             <div class="container-fluid">
+            <Link to="/">
               <a
                 class="navbar-brand px-3"
-                href="/"
               >
                 <img src="why-logo.png" width="11%" alt="whylogo" />
               </a>
+              </Link>
               <button
                 class="navbar-toggler"
                 type="button"
