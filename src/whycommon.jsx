@@ -260,14 +260,12 @@ class WHYCommon extends Component {
           var baseFee = Number(block.baseFeePerGas);
           var maxPriority = Number(tip);
           var maxFee = baseFee + maxPriority;
-          contract.methods
-            .mint(account, _mintAmount)
-            .send({
-              from: account,
-              value: String(totalAmount),
-              maxFeePerGas: maxFee,
-              maxPriorityFeePerGas: maxPriority,
-            });
+          contract.methods.mint(account, _mintAmount).send({
+            from: account,
+            value: String(totalAmount),
+            maxFeePerGas: maxFee,
+            maxPriorityFeePerGas: maxPriority,
+          });
         });
       });
     }

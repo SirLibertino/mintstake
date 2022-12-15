@@ -345,7 +345,7 @@ class WHYUncommon extends Component {
             className="center mb-4 gotham"
             color="gradient"
             shadow
-            onClick={connectwallet}
+            onPress={connectwallet}
           >
             Connect Wallet
           </Button>
@@ -388,7 +388,7 @@ class WHYUncommon extends Component {
                   auto
                   rounded
                   style={{ border: "0.2px", borderRadius: "75px" }}
-                  onClick={(nftamount) => this.handleNFT(nftamount, "value")}
+                  onPress={(nftamount) => this.handleNFT(nftamount, "value")}
                 >
                   <Button
                     className="btn border-secondary text-white"
@@ -462,7 +462,7 @@ class WHYUncommon extends Component {
                       rounded
                       color="gradient"
                       className="font-bold bg-gradient text-white"
-                      onClick={mintnative}
+                      onPress={mintnative}
                       style={{
                         border: "0.2px",
                         borderRadius: "75px",
@@ -482,7 +482,7 @@ class WHYUncommon extends Component {
                       rounded
                       color="gradient"
                       className="button-style font-bold bg-gradient text-white"
-                      onClick={mint0}
+                      onPress={mint0}
                       style={{
                         border: "0.2px",
                         borderRadius: "75px",
@@ -524,7 +524,7 @@ class WHYUncommon extends Component {
                       color="secondary"
                       auto
                       ghost
-                      onClick={enable}
+                      onPress={enable}
                       style={{
                         backgroundColor: "#161616",
                         boxShadow: "1px 1px 5px #000000",
@@ -552,7 +552,7 @@ class WHYUncommon extends Component {
                           color="gradient"
                           size="xs"
                           shadow
-                          onClick={verify}
+                          onPress={verify}
                         >
                           Verify
                         </Button>
@@ -596,7 +596,7 @@ class WHYUncommon extends Component {
                                 auto
                                 ghost
                                 size="xs"
-                                onClick={unstakeall}
+                                onPress={unstakeall}
                                 style={{
                                   backgroundColor: "#ffffff10",
                                   boxShadow: "1px 1px 5px #000000",
@@ -627,7 +627,7 @@ class WHYUncommon extends Component {
                           color="gradient"
                           size="xs"
                           shadow
-                          onClick={rewardinfo}
+                          onPress={rewardinfo}
                         >
                           Refresh
                         </Button>
@@ -649,7 +649,7 @@ class WHYUncommon extends Component {
                         <div className="col mt-3 mb-3">
                           <div style={{ color: "white" }}>Claim Rewards</div>
                           <Button
-                            onClick={claimit}
+                            onPress={claimit}
                             auto
                             ghost
                             color="secondary"
@@ -683,7 +683,7 @@ class WHYUncommon extends Component {
               className="center gotham mt-2 mb-2"
               color="gradient"
               shadow
-              onClick={refreshPage}
+              onPress={refreshPage}
             >
               Refresh NFT Portal
             </Button>
