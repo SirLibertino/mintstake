@@ -1,0 +1,9 @@
+<Router>
+  <Switch>
+    <Route exact path="/" element={<Dashboard />} />
+    <Route path="/whycommon" element={<WHYCommon />} />
+    <Route path="/whyuncommon" element={<WHYUncommon />} />
+    <Route path="/whytrip" element={<WHYTrip />} />
+    <Route path="/whylegendary" element={<WHYLegendary />} />
+  </Switch>
+</Router>
